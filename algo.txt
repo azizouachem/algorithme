@@ -1,0 +1,19 @@
+ALGORITHM Checkpoint_algo
+VAR
+
+    caract: CHAR;
+    nbre_mot: INTEGER:=0;
+    nbre_caract:INTEGER:=0;
+    nbre_voyelles: INTEGER:=0;
+BEGIN
+ DO 
+ read(caract);
+nbre_caract:= nbre_caract+1;
+IF (caract=" ") THEN
+nbre_mot:= nbre_mot+1
+ELSE
+IF (caract IN [a,e,i,o,u,y]) THEN
+nbre_voyelles: nbre_voyelles+1;
+WHILE (caract<> ".")
+Write ("the number of caracter",nbre_caract,"the number of word",nbre_mot,"the number of voyelle",nbre_voyelles);
+END
